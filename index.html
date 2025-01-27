@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Hermosa e Interactiva</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header.hero {
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://source.unsplash.com/1920x1080/?nature,landscape') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin: 10px 0 20px;
+        }
+
+        .hero-btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background: #ff7e5f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .hero-btn:hover {
+            background: #feb47b;
+        }
+
+        section.about {
+            padding: 50px 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        section.about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        section.about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section.services {
+            padding: 50px 20px;
+            background: white;
+            text-align: center;
+        }
+
+        section.services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #ff7e5f;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 class="hero-title">Bienvenido a la Web Más Hermosa</h1>
+        <p class="hero-subtitle">Un diseño moderno y atractivo para ti</p>
+        <a href="#about" class="hero-btn">Descubre Más</a>
+    </header>
+
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos una empresa dedicada a crear experiencias digitales únicas. Nuestro equipo de diseñadores y desarrolladores trabaja para ofrecer productos innovadores y soluciones atractivas para nuestros clientes.
+        </p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Diseño Web</h3>
+                <p>Creamos páginas web modernas, atractivas y adaptadas a todas las necesidades.</p>
+            </div>
+            <div class="service-card">
+                <h3>Desarrollo de Apps</h3>
+                <p>Desarrollamos aplicaciones móviles para Android y iOS con la mejor calidad.</p>
+            </div>
+            <div class="service-card">
+                <h3>Marketing Digital</h3>
+                <p>Impulsa tu negocio con estrategias de marketing digital efectivas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Web Hermosa. Todos los derechos reservados. <a href="#">Política de Privacidad</a></p>
+    </footer>
+</body>
+</html>
