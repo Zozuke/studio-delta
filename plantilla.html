@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Profesional</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Encabezado principal */
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #007bff, #00c3ff);
+            color: white;
+        }
+
+        header .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        header .btn:hover {
+            background: #00c3ff;
+            color: white;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sección de tarjetas */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Secciones generales */
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Formulario */
+        form input, form textarea {
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background: #0056b3;
+        }
+
+        /* Pie de página */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mis servicios Web</h1>
+        <p>Un diseño moderno y profesional</p>
+        <a href="#contacto" class="btn">Contáctame</a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Diseño Web</h3>
+                <p>Creación de sitios web modernos y optimizados.</p>
+            </div>
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Optimización para buscadores y más visitas.</p>
+            </div>
+            <div class="card">
+                <h3>Marketing</h3>
+                <p>Estrategias digitales para potenciar tu negocio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de Mí</h2>
+        <p>Desarrollador apasionado por la tecnología y la innovación.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p
